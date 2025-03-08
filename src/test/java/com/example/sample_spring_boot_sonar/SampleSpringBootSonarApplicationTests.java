@@ -18,6 +18,10 @@ class SampleSpringBootSonarApplicationTests {
 		log.info("test duplicated code");
 		log.info("test duplicated code");
 		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
 	}
 
 }
