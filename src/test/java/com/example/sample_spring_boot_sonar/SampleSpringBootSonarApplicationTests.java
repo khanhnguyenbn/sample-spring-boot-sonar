@@ -24,4 +24,20 @@ class SampleSpringBootSonarApplicationTests {
 		log.info("test duplicated code");
 	}
 
+	@Test
+	void test2() {
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+	}
+
 }
