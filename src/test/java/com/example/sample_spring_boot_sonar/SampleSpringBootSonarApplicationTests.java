@@ -4,6 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.Random;
+
 @Slf4j
 @SpringBootTest
 class SampleSpringBootSonarApplicationTests {
@@ -22,6 +24,11 @@ class SampleSpringBootSonarApplicationTests {
 		log.info("test duplicated code");
 		log.info("test duplicated code");
 		log.info("test duplicated code");
+
+		Random random = new Random();
+		int testNumber = random.nextInt(10);
+		log.info("testNumber: {}", testNumber);
+
 	}
 
 	@Test
@@ -38,6 +45,30 @@ class SampleSpringBootSonarApplicationTests {
 		log.info("test duplicated code");
 		log.info("test duplicated code");
 		log.info("test duplicated code");
+
+		Random random = new Random();
+		int testNumber = random.nextInt(10);
+		log.info("testNumber: {}", testNumber);
+	}
+
+	@Test
+	void test3() {
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+		log.info("test duplicated code");
+
+		Random random = new Random();
+		int testNumber = random.nextInt(10);
+		log.info("testNumber: {}", testNumber);
 	}
 
 }
