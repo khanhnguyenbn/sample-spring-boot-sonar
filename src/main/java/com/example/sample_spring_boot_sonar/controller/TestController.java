@@ -10,7 +10,6 @@ public class TestController {
 
     @GetMapping
     public String testApi() {
-        System.out.printf("Make an issue with sonar here");
         return "Hello, this is a test API  !";
     }
 }
