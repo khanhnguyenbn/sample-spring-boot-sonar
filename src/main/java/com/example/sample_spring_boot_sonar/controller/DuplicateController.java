@@ -15,7 +15,7 @@ public class DuplicateController {
         List<String> items = new ArrayList<>();
         
         // Copy chính xác đoạn code từ các service
-        for (String item : items) {
+        for (String item : items ) {
             String processed = item.trim().toLowerCase();
             if (processed.length() > 5) {
                 processed = processed.substring(0, 5);
