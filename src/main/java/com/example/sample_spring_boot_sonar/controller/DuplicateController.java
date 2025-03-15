@@ -1,19 +1,21 @@
-package com.example.sample_spring_boot_sonar;
+package com.example.sample_spring_boot_sonar.controller;
 
-import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
 import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
+@RestController
 @Slf4j
-public class DuplicateService2 {
+public class DuplicateController {
     
-    public List<String> handleData(List<String> data) {
-        List<String> results = new ArrayList<>();
+    @GetMapping("/duplicate")
+    public List<String> duplicateMethod() {
+        List<String> items = new ArrayList<>();
         
-        for (String item : data) {
-            // Copy chính xác đoạn code từ DuplicateService1
+        // Copy chính xác đoạn code từ các service
+        for (String item : items) {
             String processed = item.trim().toLowerCase();
             if (processed.length() > 5) {
                 processed = processed.substring(0, 5);
@@ -29,10 +31,10 @@ public class DuplicateService2 {
                 }
                 
                 log.info("Processing item: {}", processed);
-                results.add(processed);
+                items.add(processed);
             }
         }
         
-        return results;
+        return items;
     }
 } 
